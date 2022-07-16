@@ -2,3 +2,116 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-color: #b9a8ec;
+    --primary-lighter-color: #e6defe;
+    --secondary-color: #2A195A;
+    --secondary-darker-color: #130a2d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("./dreamin_quotes.png");
+    background-clip: inherit;
+    background-size: 100vh;
+
+}
+
+.container {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-quotes {
+    background-color: var(--primary-color);
+    border: solid 10px var(--secondary-darker-color);
+    width: 300px;
+    height: 200px;
+    padding: 100px;
+    border-radius: 60px;
+    box-shadow: 4px 6px 2px 1px rgba(21, 21, 35, 0.2);
+}
+
+.a-quote {
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-style: italic;
+    
+}
+
+.line {
+    border: solid 2px var(--secondary-color);
+    width: 180px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.button-quote {
+    /* background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 12px;
+    border: none;
+    color: var(--primary-lighter-color);
+    box-shadow: 4px 6px 2px 1px rgba(21, 21, 35, 0.2); */
+    /* width: 310px;
+    height: 100px; */
+    margin: 20px;
+    padding: 12px;
+    border-radius: 50px;
+    color: var(--primary-lighter-color);
+    background-color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 2px 4px 2px 1px rgba(6, 6, 26, 0.1);
+    transition: ease-in-out 0.3s;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.button-quote:hover {
+    /* transform: translate(-6px, -6px);
+    background: var( --secondary-darker-color);
+    
+    color: var(--primary-color); */
+    background-color: var(--secondary-darker-color);
+    color: var(--primary-lighter-color);
+    cursor: pointer;
+}
+
+.button-quote::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--secondary-darker-color);
+}
+
+.button-quote:hover::before {
+    border-radius: 50px;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
