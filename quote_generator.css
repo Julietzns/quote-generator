@@ -15,7 +15,6 @@ body {
     background-image: url("./dreamin_quotes.png");
     background-clip: inherit;
     background-size: 100vh;
-
 }
 
 .container {
@@ -39,7 +38,6 @@ body {
     font-weight: bold;
     font-size: 1.6rem;
     font-style: italic;
-    
 }
 
 .line {
@@ -55,21 +53,9 @@ body {
     margin-top: 30px;
     font-size: 1.3rem;
     font-weight: 500;
-
 }
 
 .button-quote {
-    /* background-color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 20px;
-    border-radius: 20px;
-    padding: 12px;
-    border: none;
-    color: var(--primary-lighter-color);
-    box-shadow: 4px 6px 2px 1px rgba(21, 21, 35, 0.2); */
-    /* width: 310px;
-    height: 100px; */
     margin: 20px;
     padding: 12px;
     border-radius: 50px;
@@ -86,10 +72,6 @@ body {
 }
 
 .button-quote:hover {
-    /* transform: translate(-6px, -6px);
-    background: var( --secondary-darker-color);
-    
-    color: var(--primary-color); */
     background-color: var(--secondary-darker-color);
     color: var(--primary-lighter-color);
     cursor: pointer;
